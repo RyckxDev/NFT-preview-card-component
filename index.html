@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .avatar{
+      border-radius: 10px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    .nomeNFT{
+      color: white;
+    }
+
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 15px;
+    }
+
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .container {
+    padding: 2px 16px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    body{
+      background-color: hsl(217, 54%, 11%);
+      font-family:'Outfit';
+      padding-top: 75px;
+    }
+
+    .valor{
+      color: hsl(178, 100%, 50%);
+    }
+
+    .days{
+      color: hsl(215, 51%, 70%);
+      margin-top: -40px;    
+    }
+
+    .descricao{
+      color: hsl(215, 51%, 70%);
+    }
+
+    .creation{
+      color: hsl(215, 51%, 70%);
+    }
+    
+    hr{
+    border-color: hsl(215, 51%, 70%) 
+    }
+
+
+
+    .icon{
+      color: aqua;
+      font-size: 18px;
+      margin-top: -40px;
+    }
+
+    .center {
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; color: aliceblue;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card center"  style="width:300px">  
+    <div class="container">
+      <br>
+      <img class="avatar" src="src/images/image-equilibrium.jpg" alt="avatar" style="width:100%">
+      <h2 class="nomeNFT">Equilibrium #3429</h2>
+      <p class="descricao">Our Equilibrium collection promotes balance and calm.</p>
+      <br>
+      <!--COMEÇLA AQUI A PUTARIA-->
+      <br>
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <p class="icon" align=""><img src="src/images/icon-ethereum.svg"> 0.041 ETH</p>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <p class="days" align="right"><img src="src/images/icon-clock.svg"> 3 days left</p>
+        </div>
+    </div>
+      <!--FINAL-->
+      <hr>
+      <br>
+      <br>
+      <br>
+      <div class="row avatar">
+        <div class="col-sm-6 col-md-6">
+            <p class="icon" ><img src="src/images/image-avatar.png" alt="avatar" style="width:30px;" id="foto"></p>
+        </div>
+        <div style="margin-left: 50px; margin-top: -45px; color: white;" class="col-sm-6 col-md-6">
+            <p class="">Creation of Jules Wyvern</p>
+        </div>
+    </div>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">RyckxDev</a>.
+</div>
+</body>
+</html>
